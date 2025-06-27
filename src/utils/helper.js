@@ -1,0 +1,41 @@
+import { FACEBOOK, INSTA, TWITTER } from "./Icons";
+
+import gallery1 from '../assets/png/gallery1.png'
+import gallery2 from '../assets/png/gallery2.png'
+import gallery3 from '../assets/png/gallery3.png'
+import gallery4 from '../assets/png/gallery4.png'
+import gallery5 from '../assets/png/gallery5.png'
+import gallery6 from '../assets/png/gallery6.png'
+
+export const icons = [
+    {
+        icon: INSTA,
+        link: "https://www.instagram.com/",
+    },
+    {
+        icon: FACEBOOK,
+        link: "https://www.facebook.com/",
+    },
+    {
+        icon: TWITTER,
+        link: "https://x.com/?lang=en",
+    },
+];
+
+export const footer = [
+    {
+        title: "SERVICES",
+        list: ["About", "News", "ullamcorper", "Contact"],
+    },
+    {
+        title: "EVENTS",
+        list: ["ullamcorper", "ullamcorper", "ullamcorper", "ullamcorper"],
+    },
+];
+
+export const gallery = [
+    {
+        title: "GALLERY",
+        image: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6],
+    },
+]
