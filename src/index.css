@@ -6,3 +6,7 @@
     --font-poppins: "Poppins", sans-serif;
     --font-yantra: "Yantramanav", sans-serif;
 }
+
+.gooey {
+    filter: url(#gooey);
+}

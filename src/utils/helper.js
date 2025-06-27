@@ -38,4 +38,19 @@ export const gallery = [
         title: "GALLERY",
         image: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6],
     },
+];
+
+export const navbar = [
+    {
+        link: "home",
+    },
+    {
+        link: "events",
+    },
+    {
+        link: "feed",
+    },
+    {
+        link: "user name",
+    },
 ]
