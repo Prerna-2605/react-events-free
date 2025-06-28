@@ -1,4 +1,4 @@
-import { FACEBOOK, INSTA, TWITTER } from "./Icons";
+import { BLUE_DATE, BLUE_LOCATION, BLUE_PEOPLE, FACEBOOK, INSTA, TWITTER } from "./Icons";
 
 import gallery1 from '../assets/png/gallery1.png'
 import gallery2 from '../assets/png/gallery2.png'
@@ -52,5 +52,23 @@ export const navbar = [
     },
     {
         link: "user name",
+    },
+];
+
+export const bluebox = [
+    {
+        icon: BLUE_LOCATION,
+        head: "Location",
+        subhead: "Search by city",
+    },
+    {
+        icon:BLUE_DATE,
+        head: "Date",
+        subhead: "09/23/2021",
+    },
+    {
+        icon: BLUE_PEOPLE,
+        head: "Capacity",
+        subhead: "Search by city",
     },
 ]

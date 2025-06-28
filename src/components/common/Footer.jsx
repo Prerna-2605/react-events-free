@@ -14,11 +14,13 @@ const Footer = () => {
                             <img src={logo} alt="logo" draggable="false" />
                         </Link>
 
-                        <SmallText className='text-white text-[14px] mt-9 mb-6 max-w-[346px] ' text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c '} />
+                        <SmallText
+                            className='text-white text-[14px] mt-9 mb-6 max-w-[346px] '
+                            text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c '} />
 
                         <div className='flex gap-[15.41px] '>
                             {icons.map((items, index) => (
-                                <a href={items.link} key={index}>
+                                <a href={items.link} key={index} className='hover:-translate-y-1 transition-[translate] duration-200 '>
                                     <items.icon />
                                 </a>
                             ))}
@@ -66,7 +68,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <SmallText className='text-[14px] text-white text-center pb-[25px] ' text={'© Credits of companyName belong to companyName.'}/>
+                <SmallText className='text-[14px] text-white text-center pb-[25px] ' text={'© Credits of companyName belong to companyName.'} />
             </div>
         </footer>
     )

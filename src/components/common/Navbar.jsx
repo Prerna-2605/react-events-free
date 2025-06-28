@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className='flex items-center gap-14 '>
                     <div className='flex gap-10'>
                         {navbar.map((item, index) => (
-                            <div className='px-3 py-2 cursor-pointer relative group '>
+                            <div key={index} className='px-3 py-2 cursor-pointer relative group '>
                                 {/* Gooey Blob Background */}
                                 <span
                                     className="absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 bg-[#01C8FF] blur-lg opacity-40  z-[-1] pointer-events-none gooey"
@@ -26,7 +26,6 @@ const Navbar = () => {
                                 ></span>
                                 <NavLink
                                     to={item.link == 'home' ? '/' : `/${item.link}`}
-                                    key={index}
                                     className={({ isActive }) => `uppercase font-poppins font-normal text-base ${isActive ? 'opacity-100' : 'opacity-70'}`}>
                                     {item.link}
                                 </NavLink>
