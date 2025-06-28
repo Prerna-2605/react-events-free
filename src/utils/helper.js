@@ -11,6 +11,11 @@ import sharing from '../assets/svg/sharing.svg'
 import info from '../assets/svg/info.svg'
 import help from '../assets/svg/help.svg'
 
+import participants from '../assets/svg/participants.svg'
+import topics from '../assets/svg/topics.svg'
+import speakers from '../assets/svg/speakers.svg'
+import awards from '../assets/svg/awards.svg'
+
 export const icons = [
     {
         icon: INSTA,
@@ -23,7 +28,7 @@ export const icons = [
     {
         icon: TWITTER,
         link: "https://x.com/?lang=en",
-    },
+    }
 ];
 
 export const footer = [
@@ -34,14 +39,14 @@ export const footer = [
     {
         title: "EVENTS",
         list: ["ullamcorper", "ullamcorper", "ullamcorper", "ullamcorper"],
-    },
+    }
 ];
 
 export const gallery = [
     {
         title: "GALLERY",
         image: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6],
-    },
+    }
 ];
 
 export const navbar = [
@@ -56,7 +61,7 @@ export const navbar = [
     },
     {
         link: "user name",
-    },
+    }
 ];
 
 export const bluebox = [
@@ -74,7 +79,7 @@ export const bluebox = [
         icon: BLUE_PEOPLE,
         head: "Capacity",
         subhead: "Search by city",
-    },
+    }
 ];
 
 export const special = [
@@ -92,5 +97,28 @@ export const special = [
         icon: help,
         head: "help",
         subhead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in ",
+    }
+];
+
+export const bluesection = [
+    {
+        icon: participants,
+        head: "8800",
+        subhead: "participants",
     },
+    {
+        icon: topics,
+        head: "300",
+        subhead: "topics",
+    },
+    {
+        icon: speakers,
+        head: "50",
+        subhead: "speakers",
+    },
+    {
+        icon: awards,
+        head: "30",
+        subhead: "awards",
+    }
 ];
