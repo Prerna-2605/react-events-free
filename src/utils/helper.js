@@ -16,6 +16,9 @@ import topics from '../assets/svg/topics.svg'
 import speakers from '../assets/svg/speakers.svg'
 import awards from '../assets/svg/awards.svg'
 
+import explore_card1 from '../assets/png/explore-card1.png'
+import explore_card2 from '../assets/png/explore-card2.png'
+
 export const icons = [
     {
         icon: INSTA,
@@ -122,3 +125,12 @@ export const bluesection = [
         subhead: "awards",
     }
 ];
+
+export const explore = [
+    {
+        image: explore_card1,
+    },
+    {
+        image: explore_card2,
+    }
+]

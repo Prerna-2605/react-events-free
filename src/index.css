@@ -5,6 +5,8 @@
 @theme {
     --font-poppins: "Poppins", sans-serif;
     --font-yantra: "Yantramanav", sans-serif;
+
+    --shadow-1: 2px 9px 32px 0px #0000000F;
 }
 
 .gooey {
