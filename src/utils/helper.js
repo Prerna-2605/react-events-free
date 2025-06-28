@@ -7,6 +7,10 @@ import gallery4 from '../assets/png/gallery4.png'
 import gallery5 from '../assets/png/gallery5.png'
 import gallery6 from '../assets/png/gallery6.png'
 
+import sharing from '../assets/svg/sharing.svg'
+import info from '../assets/svg/info.svg'
+import help from '../assets/svg/help.svg'
+
 export const icons = [
     {
         icon: INSTA,
@@ -62,7 +66,7 @@ export const bluebox = [
         subhead: "Search by city",
     },
     {
-        icon:BLUE_DATE,
+        icon: BLUE_DATE,
         head: "Date",
         subhead: "09/23/2021",
     },
@@ -71,4 +75,22 @@ export const bluebox = [
         head: "Capacity",
         subhead: "Search by city",
     },
-]
+];
+
+export const special = [
+    {
+        icon: sharing,
+        head: "sharing",
+        subhead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in ",
+    },
+    {
+        icon: info,
+        head: "info",
+        subhead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in ",
+    },
+    {
+        icon: help,
+        head: "help",
+        subhead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in ",
+    },
+];

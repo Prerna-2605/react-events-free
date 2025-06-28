@@ -30,8 +30,8 @@ const Homehero = () => {
 
                 <div className='flex py-[17px] px-[23px] justify-between items-center max-w-[962px] bg-[#2C49FEBD] rounded-full '>
                     {bluebox.map((items, index) => (
-                        <>
-                            <div key={index} className='flex gap-[21px] items-center '>
+                        <React.Fragment key={index}>
+                            <div className='flex gap-[21px] items-center '>
                                 <items.icon />
                                 <div>
                                     <p className='font-yantra font-medium text-[20px] text-white '>
@@ -43,10 +43,10 @@ const Homehero = () => {
                                 </div>
                             </div>
                             <div className="border-[2px] h-[74px] border-white"></div>
-                        </>
+                        </React.Fragment>
                     ))}
 
-                    <Button className='py-5 px-10 bg-white !text-[#2C49FE] uppercase !font-bold text-[20px] ' text={'go check'}/>
+                    <Button className='py-5 px-10 bg-white !text-[#2C49FE] uppercase !font-bold text-[20px] ' text={'go check'} />
                 </div>
             </div>
         </div>
