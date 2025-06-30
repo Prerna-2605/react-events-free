@@ -8,12 +8,13 @@
 
     --shadow-1: 2px 9px 32px 0px #0000000F;
     --shadow-2: 0px 8px 35px 0px #0000000D;
+    --shadow-3: 0px 8px 35px 0px #0000001A;
 }
 
 .gooey {
     filter: url(#gooey);
 }
 
-.text-stroke-1{
+.text-stroke-1 {
     -webkit-text-stroke: 0.3px;
 }

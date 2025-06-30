@@ -19,6 +19,11 @@ import awards from '../assets/svg/awards.svg'
 import explore_card1 from '../assets/png/explore-card1.png'
 import explore_card2 from '../assets/png/explore-card2.png'
 
+import date from '../assets/svg/date.svg'
+import location from '../assets/svg/location.svg'
+import people from '../assets/svg/people.svg'
+import concert from '../assets/webp/concert.webp'
+
 export const icons = [
     {
         icon: INSTA,
@@ -138,3 +143,24 @@ export const explore = [
         image: explore_card2,
     }
 ];
+
+export const Events = Array(9).fill(
+    {
+        image: concert,
+        title: "Lorem ipsum dolar sit de",
+        details: [
+            {
+                svg: date,
+                text: "10/02/2022",
+            },
+            {
+                svg: location,
+                text: "Mumbai",
+            },
+            {
+                svg: people,
+                text: "1,080",
+            },
+        ]
+    }
+);
