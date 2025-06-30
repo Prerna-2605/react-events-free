@@ -4,6 +4,7 @@ import blueline from '../assets/png/big-blue.png'
 import SmallText from './common/SmallText'
 import Button from './common/Button'
 import { bluebox } from '../utils/helper'
+import { Link } from 'react-router-dom'
 
 const Homehero = () => {
     return (
@@ -23,9 +24,9 @@ const Homehero = () => {
                         text={'Get Started'}
                         className='py-[11px] px-7 text-[20px] leading-[150%] ' />
 
-                    <a href="" target="_blank" className='font-poppins font-normal text-[20px] text-white '>
+                    <Link className='font-poppins font-normal text-[20px] text-white '>
                         Learn more
-                    </a>
+                    </Link>
                 </div>
 
                 <div className='flex py-[17px] px-[23px] justify-between items-center max-w-[962px] bg-[#2C49FEBD] rounded-full '>

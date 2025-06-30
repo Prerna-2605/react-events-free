@@ -54,16 +54,20 @@ export const gallery = [
 
 export const navbar = [
     {
+        name: "home",
         link: "home",
     },
     {
+        name: "events",
         link: "events",
     },
     {
+        name: "feed",
         link: "feed",
     },
     {
-        link: "user name",
+        name: "user name",
+        link: "username",
     }
 ];
 

@@ -3,6 +3,7 @@ import blueline from '../assets/png/small-blue.png'
 import Heading from './common/Heading'
 import SmallText from './common/SmallText'
 import { explore } from '../utils/helper'
+import { Link } from 'react-router-dom'
 
 const Explore = () => {
     return (
@@ -21,14 +22,14 @@ const Explore = () => {
                         className='max-w-[543px] mb-[15px] '
                     />
 
-                    <a href="" className='uppercase font-bold text-base '>
+                    <Link className='uppercase font-bold text-base '>
                         learn more
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="w-[55%] px-3 flex gap-[31px] ">
                     {explore.map((item, index) => (
-                        <div className='pt-[10px] pb-6 px-3 rounded-[5px] hover:scale-[1.025] hover:shadow-1 transition-all duration-200 '>
+                        <div key={index} className='pt-[10px] pb-6 px-3 rounded-[5px] hover:scale-[1.025] hover:shadow-1 transition-all duration-200 '>
                             <img src={item.image} alt="image" draggable='false' className='w-full mb-[13px] ' />
 
                             <SmallText
