@@ -137,4 +137,4 @@ export const explore = [
     {
         image: explore_card2,
     }
-]
+];
