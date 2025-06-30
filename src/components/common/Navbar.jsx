@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 w-full z-20 py-4 transition-colors duration-300 ${isFeedPage ? 'shadow-2 ' : ''} ${scrolled ? 'shadow-lg bg-white' : ''}  `}>
             <div className={`max-w-[1320px] mx-auto flex justify-between items-center ${isHomePage || isEventsPage ? 'bg-transparent' : ''} ${isFeedPage || isUserPage ? 'bg-white shadow-2' : ''} `}>
-                <Link to={'/'} className='flex items-center '>
+                <Link to={'/'} className='flex items-center'>
                     <img src={logo} alt="logo" />
                     <p className='font-poppins font-bold text-4xl text-[#2C49FE] '>
                         Events<span className='text-[#01C8FF] '>Free</span>
