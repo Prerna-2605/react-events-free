@@ -6,7 +6,7 @@ const Events = () => {
   return (
     <>
       <Eventshero />
-<ChooseEvent/>
+      <ChooseEvent />
     </>
   )
 }
