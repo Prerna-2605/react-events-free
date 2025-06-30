@@ -7,13 +7,13 @@ import More from './common/More'
 
 const FeedHero = () => {
     return (
-        <div className='max-w-[1320px] px-3 mx-auto mt-[162px]'>
+        <div className='max-w-[1320px] mx-auto mt-[165px]'>
             <div className='flex flex-wrap justify-between '>
-                <div className='w-[31%] px-3 '>
+                <div className='w-[30%] '>
                     <img src={jhoneDoe} alt="image" className='max-w-[401px] w-full' />
                 </div>
 
-                <div className='w-[67%] px-3'>
+                <div className='w-[68%] px-3'>
                     <Heading
                         text={"Jhone Doe"}
                         className='mb-4 font-semibold '

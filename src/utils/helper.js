@@ -27,6 +27,10 @@ import concert from '../assets/webp/concert.webp'
 import followingcardimg1 from '../assets/webp/following1.webp'
 import followingcardimg2 from '../assets/webp/following2.webp'
 
+import profile2 from '../assets/svg/profile2.svg'
+import profile3 from '../assets/svg/profile3.svg'
+import profile4 from '../assets/svg/profile4.svg'
+
 export const icons = [
     {
         icon: INSTA,
@@ -175,4 +179,37 @@ export const following = [
     {
         image: followingcardimg2,
     }
+];
+
+export const Username = [
+    {
+        name: "Username",
+        postname: "Post event name",
+        title: "Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.",
+        description1: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+        description2: "Sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+
+    },
+];
+
+export const Post_Data = [
+    {
+        profile: profile2,
+        name: "Username",
+        comment: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+        delete: "Remove Comment",
+
+    },
+    {
+        profile: profile3,
+        name: "Username",
+        comment: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.",
+        delete: "Remove Comment",
+    },
+    {
+        profile: profile4,
+        name: "Username",
+        comment: "Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+        delete: "Remove Comment",
+    },
 ]
