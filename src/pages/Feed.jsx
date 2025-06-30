@@ -1,8 +1,9 @@
 import React from 'react'
+import FeedHero from '../components/FeedHero'
 
 const Feed = () => {
   return (
-    <div>Feed</div>
+    <FeedHero />
   )
 }
 

@@ -24,6 +24,9 @@ import location from '../assets/svg/location.svg'
 import people from '../assets/svg/people.svg'
 import concert from '../assets/webp/concert.webp'
 
+import followingcardimg1 from '../assets/webp/following1.webp'
+import followingcardimg2 from '../assets/webp/following2.webp'
+
 export const icons = [
     {
         icon: INSTA,
@@ -164,3 +167,12 @@ export const Events = Array(9).fill(
         ]
     }
 );
+
+export const following = [
+    {
+        image: followingcardimg1,
+    },
+    {
+        image: followingcardimg2,
+    }
+]
