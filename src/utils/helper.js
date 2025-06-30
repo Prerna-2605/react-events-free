@@ -212,4 +212,6 @@ export const Post_Data = [
         comment: "Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
         delete: "Remove Comment",
     },
-]
+];
+
+export const Username5 = Array(5).fill(Username).flat()
