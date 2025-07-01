@@ -41,6 +41,11 @@ import grid4 from '../assets/webp/grid4.webp'
 import grid5 from '../assets/webp/grid5.webp'
 import grid6 from '../assets/webp/grid6.webp'
 
+import profile5 from '../assets/svg/profile5.svg'
+import profile6 from '../assets/svg/profile6.svg'
+import profile7 from '../assets/svg/profile7.svg'
+import profile8 from '../assets/svg/profile8.svg'
+
 export const icons = [
     {
         icon: INSTA,
@@ -281,4 +286,43 @@ export const Grid = [
         colSpan: "col-span-2",
         rowSpan: "row-span-1"
     }
+];
+
+export const Tell_Us = [
+    {
+        profile: profile2,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+    },
+    {
+        profile: profile3,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.',
+    },
+    {
+        profile: profile4,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+    },
+    {
+        profile: profile5,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+    },
+    {
+        profile: profile6,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+    },
+    {
+        profile: profile7,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+    },
+    {
+        profile: profile8,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+
+    },
 ]
