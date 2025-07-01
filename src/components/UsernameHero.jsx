@@ -34,7 +34,7 @@ const Usernamehero = () => {
                     </div>
 
                     <SmallText
-                        className='max-w-[857px] mb-[38px] '
+                        className='max-w-[857px] leading-[1.5] mb-[38px] '
                         text={'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.'}
                     />
 
