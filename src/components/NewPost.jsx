@@ -4,6 +4,7 @@ import More from './common/More'
 import line from '../assets/png/small-blue.png'
 import { Post_Data, Username } from '../utils/helper'
 import profile1 from '../assets/svg/profile1.svg'
+import profile2 from '../assets/svg/profile2.svg'
 import SmallText from './common/SmallText'
 import date from '../assets/svg/date.svg'
 import { COMMENT, DELETE, LIKE } from '../utils/Icons'
@@ -11,6 +12,7 @@ import img1 from '../assets/png/newpost1.png'
 import img2 from '../assets/png/newpost2.png'
 import img3 from '../assets/png/newpost3.png'
 import img4 from '../assets/png/newpost4.png'
+import Post from './common/Post'
 
 const NewPost = () => {
     return (
@@ -110,6 +112,14 @@ const NewPost = () => {
                 ))}
 
                 <div className='border-[1px] border-[#CCCCCC] mb-[26px]'></div>
+
+                <Post
+                    profile={profile2}
+                    placeholder='Write your comment here... '
+                    className='pl-19 '
+                    profileClass='top-[7.5px] left-[7.5px] '
+                    buttonClass='top-[7px] right-[7px] '
+                />
 
                 {Post_Data.map((item, index) => (
                     <div key={index} className='flex gap-5 mt-[24px] '>
