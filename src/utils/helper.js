@@ -31,6 +31,9 @@ import profile2 from '../assets/svg/profile2.svg'
 import profile3 from '../assets/svg/profile3.svg'
 import profile4 from '../assets/svg/profile4.svg'
 
+import guitar from '../assets/svg/guitar.svg'
+import ticket from '../assets/svg/ticket.svg'
+
 export const icons = [
     {
         icon: INSTA,
@@ -214,4 +217,28 @@ export const Post_Data = [
     },
 ];
 
-export const Username5 = Array(5).fill(Username).flat()
+export const Username5 = Array(5).fill(Username).flat();
+
+export const Username_Hero = [
+    {
+        icon: date,
+        data: '10/02/2022',
+    },
+    {
+        icon: location,
+        data: 'Mumbai',
+    },
+    {
+        icon: people,
+        data: '1,080',
+    },
+    {
+        icon: guitar,
+        data: '1,080',
+    },
+    {
+        icon: ticket,
+        data: '1,080',
+    },
+
+]
