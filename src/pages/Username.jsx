@@ -1,6 +1,7 @@
 import React from 'react'
 import Usernamehero from '../components/Usernamehero'
 import Comma from '../components/Comma'
+import Gallery from '../components/Gallery'
 
 
 const Username = () => {
@@ -8,6 +9,7 @@ const Username = () => {
     <>
       <Usernamehero />
       <Comma />
+      <Gallery />
     </>
   )
 }

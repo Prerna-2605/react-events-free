@@ -5,7 +5,7 @@ import commas from '../assets/svg/comma.svg'
 const Comma = () => {
     return (
         <div className='max-w-[1320px] mx-auto mb-[77px] '>
-            <div className='flex flex-wrap '>
+            <div className='flex flex-wrap items-center '>
                 <div className='w-1/2 px-3 '>
                     <img src={commas} alt="image" className='mb-[22px] ' />
 
@@ -15,8 +15,8 @@ const Comma = () => {
                     />
                 </div>
 
-                <div className='w-1/2 px-3 flex items-center justify-center '>
-                    <iframe width="560" className='rounded-[30px] ' height="315" src="https://www.youtube.com/embed/asMHYCnMb-Q?si=VYC1VHuh_IJv3KG7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <div className='w-1/2 px-3 flex '>
+                    <iframe width="619" className='rounded-[30px] ' height="415" src="https://www.youtube.com/embed/asMHYCnMb-Q?si=VYC1VHuh_IJv3KG7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
             </div>
         </div>

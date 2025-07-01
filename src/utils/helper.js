@@ -34,6 +34,13 @@ import profile4 from '../assets/svg/profile4.svg'
 import guitar from '../assets/svg/guitar.svg'
 import ticket from '../assets/svg/ticket.svg'
 
+import grid1 from '../assets/webp/grid1.webp'
+import grid2 from '../assets/webp/grid2.webp'
+import grid3 from '../assets/webp/grid3.webp'
+import grid4 from '../assets/webp/grid4.webp'
+import grid5 from '../assets/webp/grid5.webp'
+import grid6 from '../assets/webp/grid6.webp'
+
 export const icons = [
     {
         icon: INSTA,
@@ -241,4 +248,37 @@ export const Username_Hero = [
         data: '1,080',
     },
 
+];
+
+export const Grid = [
+    {
+        img: grid1,
+        colSpan: "col-span-1",
+        rowSpan: "row-span-1"
+    },
+    {
+        img: grid2,
+        colSpan: "col-span-1",
+        rowSpan: "row-span-1"
+    },
+    {
+        img: grid3,
+        colSpan: "col-span-1",
+        rowSpan: "row-span-2"
+    },
+    {
+        img: grid4,
+        colSpan: "col-span-2",
+        rowSpan: "row-span-1"
+    },
+    {
+        img: grid5,
+        colSpan: "col-span-1",
+        rowSpan: "row-span-1"
+    },
+    {
+        img: grid6,
+        colSpan: "col-span-2",
+        rowSpan: "row-span-1"
+    }
 ]
