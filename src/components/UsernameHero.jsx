@@ -4,6 +4,7 @@ import Heading from './common/Heading'
 import Button from './common/Button'
 import SmallText from './common/SmallText'
 import { Username_Hero } from '../utils/helper'
+import Breadcrumb from './common/Breadcrumb'
 
 const UsernameHero = () => {
     return (
@@ -14,6 +15,10 @@ const UsernameHero = () => {
                 </div>
 
                 <div className='w-[65%] px-3 '>
+                    <Breadcrumb
+                        className='mb-3 '
+                    />
+
                     <div className='flex justify-between mb-[29px] '>
                         <Heading
                             className='font-semibold '

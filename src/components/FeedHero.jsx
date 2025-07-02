@@ -4,6 +4,7 @@ import Heading from './common/Heading'
 import SmallText from './common/SmallText'
 import { following } from '../utils/helper'
 import More from './common/More'
+import Breadcrumb from './common/Breadcrumb'
 
 const FeedHero = () => {
     return (
@@ -14,6 +15,10 @@ const FeedHero = () => {
                 </div>
 
                 <div className='w-[68%] px-3'>
+                    <Breadcrumb
+                    className='mb-3 '
+                    />
+
                     <Heading
                         text={"Jhone Doe"}
                         className='mb-4 font-semibold '
@@ -23,12 +28,12 @@ const FeedHero = () => {
                         className='max-w-[857px] mb-[29px]'
                         text={"Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet."}
                     />
-                    
+
                     <SmallText
                         className='font-semibold mb-[17px] '
                         text={'Following Events :'}
                     />
-                    
+
                     <div className='gap-[20px] flex'>
                         {following.map((item, index) => (
                             <div key={index} className='rounded-[20px] flex gap-3 p-[13px] items-center shadow-3 max-w-[322px]'>
