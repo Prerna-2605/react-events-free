@@ -14,9 +14,7 @@ const NewPost = () => {
                 className='font-semibold leading-[150%] mb-[30px] '
             />
 
-            <AddComment
-                className='shadow-3 '
-            />
+            <AddComment/>
         </div>
     )
 }

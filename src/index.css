@@ -11,10 +11,6 @@
     --shadow-3: 0px 8px 35px 0px #0000001A;
 }
 
-.gooey {
-    filter: url(#gooey);
-}
-
 .text-stroke-1 {
     -webkit-text-stroke: 0.3px;
 }

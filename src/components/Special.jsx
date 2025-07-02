@@ -26,7 +26,7 @@ const Special = () => {
                         className='mb-[46px] '
                     />
 
-                    <div className='grid grid-cols-2 gap-y-[37px]  '>
+                    <div className='grid grid-cols-2 gap-y-[37px] gap-x-9 '>
                         {special.map((items, index) => (
                             <div key={index} className={`relative flex justify-center ${special.length % 2 !== 0 && index === special.length - 1 ? 'col-span-2 mx-auto' : ''}`}>
                                 <div className='size-[79px] max-w-[79px] w-full border-[2px] border-[#2C49FE] bg-white z-1 rounded-full flex items-center justify-center absolute left-1/2 -translate-x-1/2 -translate-y-1/2 '>
