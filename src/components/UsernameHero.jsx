@@ -5,7 +5,7 @@ import Button from './common/Button'
 import SmallText from './common/SmallText'
 import { Username_Hero } from '../utils/helper'
 
-const Usernamehero = () => {
+const UsernameHero = () => {
     return (
         <div className='max-w-[1320px] mx-auto pt-[165px] mb-[134px] '>
             <div className='flex flex-wrap justify-between '>
@@ -51,13 +51,10 @@ const Usernamehero = () => {
                             </div>
                         ))}
                     </div>
-
-
                 </div>
             </div>
-
         </div>
     )
 }
 
-export default Usernamehero
+export default UsernameHero

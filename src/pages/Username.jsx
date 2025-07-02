@@ -1,14 +1,14 @@
 import React from 'react'
-import Usernamehero from '../components/Usernamehero'
 import Comma from '../components/Comma'
 import Gallery from '../components/Gallery'
 import TellUs from '../components/TellUs'
+import UsernameHero from '../components/Usernamehero'
 
 
 const Username = () => {
   return (
     <>
-      <Usernamehero />
+      <UsernameHero/>
       <Comma />
       <Gallery />
       <TellUs />

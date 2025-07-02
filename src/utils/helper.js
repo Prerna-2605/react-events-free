@@ -229,8 +229,6 @@ export const Post_Data = [
     },
 ];
 
-export const Username5 = Array(5).fill(Username).flat();
-
 export const Username_Hero = [
     {
         icon: date,

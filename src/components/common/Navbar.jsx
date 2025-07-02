@@ -36,12 +36,16 @@ const Navbar = () => {
                             <NavLink
                                 key={index}
                                 to={item.link == 'home' ? '/' : `/${item.link}`}
-                                className={({ isActive }) => `px-3 py-2 cursor-pointer relative group uppercase font-normal text-base transition-all duration-300 ${isActive ? 'opacity-100 text-stroke-1 ' : 'opacity-70'} ${(isHomePage || isEventsPage) ? (scrolled ? 'text-black' : 'text-white') : (scrolled ? 'text-black' : 'text-black')} `}>
+                                className={({ isActive }) => `px-3 py-2 cursor-pointer relative group uppercase font-normal text-base no-underline transition-all duration-300 hover:tracking-wider ${isActive ? 'opacity-100 text-stroke-1 ' : 'opacity-70'} ${(isHomePage || isEventsPage) ? (scrolled ? 'text-black' : 'text-white') : (scrolled ? 'text-black' : 'text-black')} `}>
                                 {item.name}
-                                <span
+                                {/* <span
                                     className="absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 bg-[#01C8FF] blur-lg opacity-40  z-[-1] pointer-events-none gooey"
                                 // 🔁 CHANGED: Added inset-0, scale animation, blur, opacity, z-index, and pointer-events-none
-                                ></span>
+                                ></span> */}
+                                {/* Top-left corner */}
+                                <span className="absolute top-0 left-0 w-0 h-0 border-t-2 border-l-2 border-transparent transition-all duration-300 group-hover:w-2.5 group-hover:h-2.5 group-hover:border-[#A6A6A6]"></span>
+                                {/* Bottom-right corner */}
+                                <span className="absolute bottom-0 right-0 w-0 h-0 border-b-2 border-r-2 border-transparent transition-all duration-300 group-hover:w-2.5 group-hover:h-2.5 group-hover:border-[#A6A6A6]"></span>
                             </NavLink>
                         ))}
                     </div>

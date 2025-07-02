@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Heading from './common/Heading'
 import SmallText from './common/SmallText'
 import line from '../assets/png/very-small-blue.png'
@@ -8,6 +8,8 @@ import { DELETE } from '../utils/Icons'
 import profile from '../assets/svg/profile1.svg'
 
 const TellUs = () => {
+    const [commentText, setCommentText] = useState('');
+
     return (
         <div className='max-w-[1320px] mx-auto mb-[118px] '>
             <img src={line} alt="image" className='block mx-auto ' />
@@ -26,8 +28,10 @@ const TellUs = () => {
                 placeholder='Add a new comment '
                 className='pl-[75px] pr-[190px] '
                 buttonClass='top-[7.25px] right-[7px] '
-                profile={profile }
+                profile={profile}
                 profileClass='top-[7.5px] left-2 '
+                value={commentText}
+                onChange={(e) => setCommentText(e.target.value)}
             />
 
             <div>
