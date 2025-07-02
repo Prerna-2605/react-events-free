@@ -7,7 +7,7 @@ import { special } from '../utils/helper'
 
 const Special = () => {
     return (
-        <div className='max-w-[1320px] mx-auto mt-[137px] mb-[73px] '>
+        <div className='max-w-[1320px] mx-auto mt-[137px] mb-[73px] px-3 '>
             <div className="flex flex-wrap">
                 <div className="w-1/2 px-3">
                     <img src={television} alt="image" draggable='false' />

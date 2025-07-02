@@ -8,7 +8,7 @@ import Button from './common/Button'
 
 const Joinus = () => {
     return (
-        <div className='max-w-[1320px] mx-auto mb-[90px]'>
+        <div className='max-w-[1320px] mx-auto mb-[90px] px-3 '>
             <div className="flex flex-wrap items-center">
                 <div className="w-1/2 px-3">
                     <img src={bgimg} alt="image" draggable='false' className='w-[80%] ' />

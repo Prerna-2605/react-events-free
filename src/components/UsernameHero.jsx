@@ -7,7 +7,7 @@ import { Username_Hero } from '../utils/helper'
 
 const UsernameHero = () => {
     return (
-        <div className='max-w-[1320px] mx-auto pt-[165px] mb-[134px] '>
+        <div className='max-w-[1320px] mx-auto pt-[165px] mb-[134px] px-3 '>
             <div className='flex flex-wrap justify-between '>
                 <div className='w-[33%] px-3 '>
                     <img src={img} alt="image" />

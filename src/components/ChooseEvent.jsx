@@ -6,7 +6,7 @@ import Button from './common/Button'
 
 const ChooseEvent = () => {
     return (
-        <div className='max-w-[1320px] mx-auto pt-17 mb-[155px]'>
+        <div className='max-w-[1320px] mx-auto pt-17 px-3 mb-[155px]'>
             <img src={line} alt="image" className='block mx-auto' />
             <Heading text={"Choose your next event"} className='text-center mb-[33px]' />
 

@@ -7,7 +7,7 @@ import { footer, gallery, icons } from '../../utils/helper'
 const Footer = () => {
     return (
         <footer className='bg-black '>
-            <div className="max-w-[1320px] mx-auto">
+            <div className="max-w-[1320px] mx-auto px-3 ">
                 <div className='flex flex-wrap pt-[81px] pb-[95px] justify-between items-center '>
                     <div className="w-1/3 px-3">
                         <Link to={'/'}>

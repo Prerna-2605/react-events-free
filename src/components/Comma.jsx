@@ -4,7 +4,7 @@ import commas from '../assets/svg/comma.svg'
 
 const Comma = () => {
     return (
-        <div className='max-w-[1320px] mx-auto mb-[77px] '>
+        <div className='max-w-[1320px] mx-auto mb-[77px] px-3 '>
             <div className='flex flex-wrap items-center '>
                 <div className='w-1/2 px-3 '>
                     <img src={commas} alt="image" className='mb-[22px] ' />

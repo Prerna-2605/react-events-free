@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Explore = () => {
     return (
-        <div className='max-w-[1320px] mx-auto mb-[163px] '>
+        <div className='max-w-[1320px] mx-auto mb-[163px] px-3 '>
             <div className="flex flex-wrap">
                 <div className="w-[45%] px-3">
                     <img src={blueline} alt="image" draggable='false' className='mb-[9px] ' />

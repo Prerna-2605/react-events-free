@@ -6,7 +6,7 @@ import AddComment from './common/AddComment'
 const NewPost = () => {
 
     return (
-        <div className='max-w-[1320px] mx-auto'>
+        <div className='max-w-[1320px] mx-auto px-3 '>
             <img src={line} alt="line" className='mt-[76px]' />
 
             <Heading

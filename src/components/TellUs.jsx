@@ -11,7 +11,7 @@ const TellUs = () => {
     const [commentText, setCommentText] = useState('');
 
     return (
-        <div className='max-w-[1320px] mx-auto mb-[118px] '>
+        <div className='max-w-[1320px] mx-auto mb-[118px] px-3 '>
             <img src={line} alt="image" className='block mx-auto ' />
 
             <Heading

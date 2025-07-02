@@ -7,7 +7,7 @@ import More from './common/More'
 
 const FeedHero = () => {
     return (
-        <div className='max-w-[1320px] mx-auto mt-[165px]'>
+        <div className='max-w-[1320px] mx-auto px-3 mt-[165px]'>
             <div className='flex flex-wrap justify-between '>
                 <div className='w-[30%] '>
                     <img src={jhoneDoe} alt="image" className='max-w-[401px] w-full' />

@@ -7,7 +7,7 @@ import { bluesection } from '../utils/helper'
 const Bluesection = () => {
   return (
     <div className='pt-[50px] pb-12 mb-[122px] bg-cover bg-center bg-no-repeat ' style={{ backgroundImage: `url(${bgimg})` }}>
-      <div className="max-w-[1320px] mx-auto">
+      <div className="max-w-[1320px] mx-auto px-3 ">
         <Heading
           text={'Lorem ipsum dolor sit amet, consectetur'}
           className='max-w-[708px] text-center mx-auto text-white leading-[130%] mb-10 '

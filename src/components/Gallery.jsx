@@ -5,7 +5,7 @@ import { Grid } from '../utils/helper'
 
 const Gallery = () => {
     return (
-        <div className='max-w-[1320px] mx-auto mb-[67px] '>
+        <div className='max-w-[1320px] mx-auto mb-[67px] px-3 '>
             <img src={line} alt="image" className='block mx-auto ' />
 
             <Heading

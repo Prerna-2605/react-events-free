@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 const Homehero = () => {
     return (
         <div className='bg-center bg-cover bg-no-repeat pb-[104px] ' style={{ backgroundImage: `url(${section1bg})` }} >
-            <div className='max-w-[1320px] mx-auto pt-[256px] '>
+            <div className='max-w-[1320px] mx-auto pt-[256px] px-3 '>
                 <h1 className='font-poppins font-bold text-[64px] text-white max-w-[1044px] leading-[150%] relative mb-[18px] '>
                     Sed tortor inquisque morbi scelerisque etiam eu.
                     <img src={blueline} alt="img" className='absolute top-1/2 right-42' />
