@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import logo from '../../assets/svg/logo.svg'
 import { navbar } from '../../utils/helper'
 import Button from './Button'
+import { Squash as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
     const [state, setIsOpen] = useState(null)
@@ -33,14 +34,14 @@ const Navbar = () => {
                 </Link>
 
                 <div className='flex items-center gap-14 '>
-                    <div className={`flex gap-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:bg-[#2C49FE] max-md:fixed max-md:top-0 max-md:right-0 max-md:w-[70%] max-md:h-screen max-md:transition-transform max-md:duration-300 max-md:z-10 ${state === "show" ? 'max-md:translate-x-0' : 'max-md:translate-x-full'}`}>
+                    <div className={`flex gap-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:bg-[#2C49FE] max-md:fixed max-md:top-0 max-md:w-[70%] max-md:h-screen max-md:transition-[right] max-md:duration-300 max-md:z-10 ${state === "show" ? 'max-md:right-0 ' : 'max-md:-right-full '}`}>
 
                         {navbar.map((item, index) => (
                             <NavLink
                                 key={index}
                                 to={item.link == 'home' ? '/' : `/${item.link}`}
                                 className={({ isActive }) => {
-                                    const baseStyle = 'px-3 py-2 cursor-pointer relative group uppercase font-normal text-base no-underline transition-all duration-300 hover:tracking-wider';
+                                    const baseStyle = 'px-3 py-2 cursor-pointer relative group uppercase font-normal text-base whitespace-nowrap transition-all duration-300 hover:tracking-widest';
                                     const activeStyle = isActive ? 'opacity-100 text-stroke-1' : 'opacity-70';
 
                                     let textColor = '';
@@ -67,11 +68,15 @@ const Navbar = () => {
                     </div>
                     <div className='flex items-center gap-4 '>
                         <Button className='py-[11px] px-7 ' text={'Log Out'} />
-                        <button onClick={() => setIsOpen(state === "show" ? null : "show")} className='w-[35px] h-7 flex flex-col justify-between z-19 md:hidden '>
-                            <span className={`w-1/2 h-[3px] rounded-full transition-all duration-300 active:scale-95 ${state === "show" ? 'w-full rotate-45 origin-left bg-white ' : 'rotate-0'} ${showBlueBg ? 'bg-[#2C49FE]' : 'bg-white'} `}></span>
-                            <span className={`w-full h-[3px] rounded-full transition-all duration-300 active:scale-95 ${state === "show" ? 'hidden ' : ''} ${showBlueBg ? 'bg-[#2C49FE]' : 'bg-white'} `}></span>
-                            <span className={`w-1/2 h-[3px] rounded-full transition-all duration-300 active:scale-95 ${state === "show" ? 'w-full -rotate-45 origin-left bg-white ' : 'rotate-0'} ${showBlueBg ? 'bg-[#2C49FE]' : 'bg-white'} `}></span>
-                        </button>
+                        <div className='z-19 md:hidden '>
+                            <Hamburger
+                                toggled={state === 'show'}
+                                toggle={() => setIsOpen(state === 'show' ? null : 'show')}
+                                color={state === 'show' ? '#ffffff' : (showBlueBg ? '#2C49FE' : '#ffffff')}
+                                rounded
+                                size={36}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

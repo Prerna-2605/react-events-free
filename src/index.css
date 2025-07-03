@@ -14,3 +14,25 @@
 .text-stroke-1 {
     -webkit-text-stroke: 0.3px;
 }
+
+@media (max-width:710px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px;
+    }
+
+    .cards :last-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:585px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 46px;
+    }
+
+    .cards :last-child {
+        grid-column: span 1;
+    }
+}

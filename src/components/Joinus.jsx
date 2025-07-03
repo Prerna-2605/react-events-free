@@ -10,11 +10,11 @@ const Joinus = () => {
     return (
         <div className='max-w-[1320px] mx-auto mb-[90px] px-3 '>
             <div className="flex flex-wrap items-center">
-                <div className="w-1/2 px-3">
+                <div className="w-1/2 px-3 max-[945px]:hidden ">
                     <img src={bgimg} alt="image" draggable='false' className='w-[80%] ' />
                 </div>
 
-                <div className="w-1/2 px-3">
+                <div className="w-1/2 px-3 max-[945px]:w-full ">
                     <img src={blueline} alt="image" draggable='false' />
 
                     <Heading
@@ -33,16 +33,16 @@ const Joinus = () => {
                     />
 
                     <div>
-                        <div className='flex justify-between mb-4 '>
+                        <div className='min-[430px]:flex justify-between mb-4 '>
                             <Input
                                 type={'text'}
                                 placeholder={'First Name'}
-                                className='max-w-[48.5%] w-full '
+                                className='min-[430px]:max-w-[48.5%] w-full max-[430px]:mb-4 '
                             />
                             <Input
                                 type={'text'}
                                 placeholder={'Last Name'}
-                                className='max-w-[48.5%] w-full '
+                                className='min-[430px]:max-w-[48.5%] w-full '
                             />
                         </div>
 
@@ -52,16 +52,16 @@ const Joinus = () => {
                             className='w-full mb-4 '
                         />
 
-                        <div className='flex justify-between mb-4 '>
+                        <div className='min-[430px]:flex justify-between mb-4 '>
                             <Input
                                 type={'password'}
                                 placeholder={'Password'}
-                                className='max-w-[48.5%] w-full '
+                                className='min-[430px]:max-w-[48.5%] w-full max-[430px]:mb-4 '
                             />
                             <Input
                                 type={'password'}
                                 placeholder={'Confirm Password'}
-                                className='max-w-[48.5%] w-full '
+                                className='min-[430px]:max-w-[48.5%] w-full '
                             />
                         </div>
 

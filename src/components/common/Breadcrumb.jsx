@@ -11,7 +11,7 @@ const Breadcrumb = ({className=''}) => {
     console.log(generatePath)
     return (
         <div className={`text-sm py-2  ${className}`}>
-            <Link to="/" className={`font-poppins font-normal text-base text-[#666666] ${EventsPage ? 'text-white' : 'text-[#666666]'} `}>Home</Link>
+            <Link to="/" className={`font-poppins font-normal text-base text-[#666666] opacity-70 ${EventsPage ? 'text-white' : 'text-[#666666]'} `}>Home</Link>
             {pathnames.map((_, index) => {
                 const path = generatePath(index);
 
@@ -23,13 +23,13 @@ const Breadcrumb = ({className=''}) => {
 
                 return (
                     <span key={path}>
-                        <span className={`${EventsPage ? 'text-white' : 'text-[#666666]'} font-poppins font-normal text-base text-[#666666]`}>{' >  '}</span>
+                        <span className={`${EventsPage ? 'text-white' : 'text-[#666666]'} opacity-70 font-poppins font-normal text-base text-[#666666]`}>{' >  '}</span>
                         {index !== pathnames.length - 1 ? (
                             <Link to={path} className="text-black">
                                 {name}
                             </Link>
                         ) : (
-                                <span className={`font-poppins font-normal text-base capitalize  ${EventsPage ? 'text-white' : 'text-[#2C49FE] '}`}>{name}</span>
+                                <span className={`font-poppins font-normal text-base capitalize opacity-100  ${EventsPage ? 'text-white' : 'text-[#666666] '}`}>{name}</span>
                         )}
                     </span>
                 );
