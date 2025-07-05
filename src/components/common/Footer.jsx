@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../assets/svg/footer-logo.svg'
 import { Link } from 'react-router-dom'
-import SmallText from './SmallText'
+import Description from './Description'
 import { footer, gallery, icons } from '../../utils/helper'
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
                             <img src={logo} alt="logo" draggable="false" />
                         </Link>
 
-                        <SmallText
+                        <Description
                             className='text-white text-[14px] mt-9 mb-6 md:max-w-[346px] '
                             text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c '} />
 
@@ -70,7 +70,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <SmallText className='text-[14px] text-white text-center pb-[25px] ' text={'© Credits of companyName belong to companyName.'} />
+                <Description className='text-[14px] text-white text-center pb-[25px] ' text={'© Credits of companyName belong to companyName.'} />
             </div>
         </footer>
     )

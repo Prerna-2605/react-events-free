@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Heading from './common/Heading'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import line from '../assets/png/very-small-blue.png'
 import Post from './common/Post'
 import { Tell_Us } from '../utils/helper'
@@ -20,7 +20,7 @@ const TellUs = () => {
                 text={'Tell Us!'}
             />
 
-            <SmallText
+            <Description
                 className='max-w-[719px] mb-[47px] text-center mx-auto '
                 text={'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.'}
             />
@@ -57,7 +57,7 @@ const TellUs = () => {
                                     text={item.name}
                                     className='!text-base !font-medium '
                                 />
-                                <SmallText
+                                <Description
                                     text={item.comment}
                                     className='leading-[1.5] '
                                 />
@@ -73,7 +73,7 @@ const TellUs = () => {
                             >
                                 <DELETE />
 
-                                <SmallText
+                                <Description
                                     text={'Remove Comment'}
                                 />
                             </div>

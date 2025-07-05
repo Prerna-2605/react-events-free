@@ -3,7 +3,7 @@ import More from '../../components/common/More'
 import { Post_Data, Username } from '../../utils/helper'
 import profile1 from '../../assets/svg/profile1.svg'
 import profile2 from '../../assets/svg/profile2.svg'
-import SmallText from './../common/SmallText'
+import Description from './../common/Description'
 import date from '../../assets/svg/date.svg'
 import { COMMENT, DELETE, LIKE } from '../../utils/Icons'
 import img1 from '../../assets/png/newpost1.png'
@@ -33,20 +33,20 @@ const AddComment = () => {
                             <img src={profile1} alt="profile" />
 
                             <div>
-                                <SmallText
+                                <Description
                                     text={item.name}
                                     className='font-semibold !text-2xl leading-[150%] text-black '
                                 />
 
 
-                                <SmallText
+                                <Description
                                     text={item.postname}
                                     className='text-[#666666] '
                                 />
                             </div>
                         </div>
 
-                        <SmallText
+                        <Description
                             text={item.title}
                             className='font-semibold !text-2xl text-black leading-[150%] mb-2 max-lg:hidden '
                         />
@@ -54,18 +54,18 @@ const AddComment = () => {
                         <div className='flex gap-2 mb-5 items-center max-lg:hidden'>
                             <img src={date} alt="image" />
 
-                            <SmallText
+                            <Description
                                 text={new_date}
                                 className='text-[#666666] '
                             />
                         </div>
 
-                        <SmallText
+                        <Description
                             text={item.description1}
                             className='text-[#666666] lg:max-w-[553px] mb-[13px] '
                         />
 
-                        <SmallText
+                        <Description
                             text={item.description2}
                             className='text-[#666666] lg:max-w-[553px] mb-[26px] '
                         />
@@ -79,7 +79,7 @@ const AddComment = () => {
                                 className="flex gap-2 items-center"
                             >
                                 <LIKE className={`cursor-pointer ${liked ? 'text-[#2C49FE]' : ''}`} liked={liked} />
-                                <SmallText text={likeCount} />
+                                <Description text={likeCount} />
                             </button>
 
 
@@ -88,7 +88,7 @@ const AddComment = () => {
                                 className="flex gap-2 items-center"
                             >
                                 <COMMENT className="cursor-pointer" />
-                                <SmallText text={comments.length} className="text-[#666666]" />
+                                <Description text={comments.length} className="text-[#666666]" />
                             </button>
 
                         </div>
@@ -98,12 +98,12 @@ const AddComment = () => {
                             <img src={profile1} alt="profile" className='max-sm:size-12  ' />
 
                             <div>
-                                <SmallText
+                                <Description
                                     text={item.name}
                                     className='font-semibold !text-2xl max-lg:!text-xl max-md:!text-[18px] leading-[150%] text-black '
                                 />
 
-                                <SmallText
+                                <Description
                                     text={item.postname}
                                     className='text-[#666666] max-md:!text-[13px] '
                                 />
@@ -113,13 +113,13 @@ const AddComment = () => {
                         <div className='flex gap-2 mb-5 items-center lg:hidden'>
                             <img src={date} alt="image" />
 
-                            <SmallText
+                            <Description
                                 text={new_date}
                                 className='text-[#666666] max-md:!text-[13px] '
                             />
                         </div>
 
-                        <SmallText
+                        <Description
                             text={item.title}
                             className='font-semibold !text-2xl max-lg:!text-xl max-md:!text-[18px] text-black leading-[150%] mb-6 lg:hidden'
                         />
@@ -179,11 +179,11 @@ const AddComment = () => {
                             <img src={item.profile} alt="profile" className='size-[56px] max-md:!size-[46px] max-sm:!size-[42px] ' />
                             <div className='w-full '>
                                 <div className='bg-[#F1F2F5] py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] mb-2 '>
-                                    <SmallText
+                                    <Description
                                         text={item.name}
                                         className='!font-medium text-black mb-[10px] '
                                     />
-                                    <SmallText
+                                    <Description
                                         text={item.comment}
                                         className='text-[#606162] '
                                     />
@@ -199,7 +199,7 @@ const AddComment = () => {
                                     }}
                                 >
                                     <DELETE />
-                                    <SmallText text={item.delete} className='text-[#666666]' />
+                                    <Description text={item.delete} className='text-[#666666]' />
                                 </div>
                             </div>
                         </div>

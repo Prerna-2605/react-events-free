@@ -2,7 +2,7 @@ import React from 'react'
 import bgimg from '../assets/webp/join-us.webp'
 import blueline from '../assets/png/small-blue.png'
 import Heading from './common/Heading'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import Input from './common/Input'
 import Button from './common/Button'
 
@@ -22,7 +22,7 @@ const Joinus = () => {
                         className='my-[17px] '
                     />
 
-                    <SmallText
+                    <Description
                         text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue '}
                         className='max-w-[543px] mb-[15px] '
                     />

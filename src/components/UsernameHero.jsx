@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../assets/webp/user-section1.webp'
 import Heading from './common/Heading'
 import Button from './common/Button'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import { Username_Hero } from '../utils/helper'
 import Breadcrumb from './common/Breadcrumb'
 
@@ -42,7 +42,7 @@ const UsernameHero = () => {
                         </div>
                     </div>
 
-                    <SmallText
+                    <Description
                         className='min-[1240px]:max-w-[857px] leading-[1.5] mb-[38px] '
                         text={'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.'}
                     />
@@ -53,7 +53,7 @@ const UsernameHero = () => {
                                 <div className='flex gap-2 items-center '>
                                     <img src={item.icon} alt="image" />
 
-                                    <SmallText
+                                    <Description
                                         text={item.data}
                                     />
                                 </div>

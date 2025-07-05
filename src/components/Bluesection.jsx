@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from './common/Heading'
 import bgimg from '../assets/webp/blue-section.webp'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import { bluesection } from '../utils/helper'
 
 const Bluesection = () => {
@@ -13,7 +13,7 @@ const Bluesection = () => {
           className='max-w-[708px] text-center mx-auto text-white leading-[130%] mb-10 '
         />
 
-        <SmallText
+        <Description
           text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec '}
           className='max-w-[765px] text-center mx-auto text-white mb-[78px] '
         />
@@ -27,7 +27,7 @@ const Bluesection = () => {
                 {items.head}
               </p>
 
-              <SmallText
+              <Description
                 text={items.subhead}
                 className='text-[18px] uppercase text-white '
               />

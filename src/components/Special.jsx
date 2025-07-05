@@ -2,7 +2,7 @@ import React from 'react'
 import television from '../assets/webp/television.webp'
 import blueline from '../assets/png/small-blue.png'
 import Heading from './common/Heading'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import { special } from '../utils/helper'
 
 const Special = () => {
@@ -21,7 +21,7 @@ const Special = () => {
                         className='mb-4 max-lg:text-center '
                     />
 
-                    <SmallText
+                    <Description
                         text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,'}
                         className='mb-[46px] max-lg:text-center '
                     />
@@ -38,7 +38,7 @@ const Special = () => {
                                         {items.head}
                                     </p>
 
-                                    <SmallText
+                                    <Description
                                         text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in '}
                                         className='text-center !text-[#2C49FE] group-hover:!text-white transition-colors duration-200 '
                                     />

@@ -1,7 +1,7 @@
 import React from 'react'
 import blueline from '../assets/png/small-blue.png'
 import Heading from './common/Heading'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import { explore } from '../utils/helper'
 import { Link } from 'react-router-dom'
 
@@ -23,7 +23,7 @@ const Explore = () => {
                         className='lg:max-w-[338px] leading-[137%] mb-3 max-lg:text-center '
                     />
 
-                    <SmallText
+                    <Description
                         text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu.'}
                         className='lg:max-w-[543px] mb-[15px] max-lg:text-center '
                     />
@@ -38,7 +38,7 @@ const Explore = () => {
                         <div key={index} className='max-lg:max-w-[336px] pt-[10px] pb-6 px-3 rounded-[5px] hover:scale-[1.025] hover:shadow-1 transition-all duration-200 '>
                             <img src={item.image} alt="image" draggable='false' className='w-full mb-[13px] ' />
 
-                            <SmallText
+                            <Description
                                 text={date}
                                 className='text-[14px] '
                             />
@@ -47,7 +47,7 @@ const Explore = () => {
                                 Lorem ipsum
                             </p>
 
-                            <SmallText
+                            <Description
                                 text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in '}
                             />
                         </div>

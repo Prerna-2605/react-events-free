@@ -3,7 +3,7 @@ import Heading from './common/Heading'
 import line from '../assets/png/small-blue.png'
 import { Events } from '../utils/helper'
 import Button from './common/Button'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 
 const ChooseEvent = () => {
     return (
@@ -20,7 +20,7 @@ const ChooseEvent = () => {
                             <div key={i} className='flex items-center gap-2 mb-[17px]'>
                                 <img src={info.svg} alt="image" />
 
-                                <SmallText
+                                <Description
                                     text={info.text}
                                 />
                             </div>

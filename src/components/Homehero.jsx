@@ -1,7 +1,7 @@
 import React from 'react'
 import section1bg from '../assets/webp/conference.webp'
 import blueline from '../assets/png/big-blue.png'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import Button from './common/Button'
 import { bluebox } from '../utils/helper'
 import { Link } from 'react-router-dom'
@@ -18,7 +18,7 @@ const Homehero = () => {
 
                 </h1>
 
-                <SmallText
+                <Description
                     className='max-w-[765px] font-yantra text-[20px] text-white mb-[33px] '
                     text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,'} />
 

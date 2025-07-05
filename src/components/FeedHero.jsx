@@ -1,7 +1,7 @@
 import React from 'react'
 import jhoneDoe from '../assets/webp/jhone.webp'
 import Heading from './common/Heading'
-import SmallText from './common/SmallText'
+import Description from './common/Description'
 import { following } from '../utils/helper'
 import More from './common/More'
 import Breadcrumb from './common/Breadcrumb'
@@ -28,12 +28,12 @@ const FeedHero = () => {
                         className='mb-4 font-semibold '
                     />
 
-                    <SmallText
+                    <Description
                         className='min-[1129px]:max-w-[857px] mb-[29px]'
                         text={"Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet."}
                     />
 
-                    <SmallText
+                    <Description
                         className='font-semibold mb-[17px] '
                         text={'Following Events :'}
                     />
@@ -46,7 +46,7 @@ const FeedHero = () => {
                                     <p className='font-poppins font-bold text-base max-md:text-center '>
                                         Augue etiam
                                     </p>
-                                    <SmallText
+                                    <Description
                                         text={'Quis et id urna sagittis. Enim lacus, felis, libero sed nisl vitae blandit sociis.'}
                                         className='!text-[13px] max-md:text-center '
                                     />
