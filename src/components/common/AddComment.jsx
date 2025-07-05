@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import More from '../../components/common/More'
-import {Post_Data, Username } from '../../utils/helper'
+import { Post_Data, Username } from '../../utils/helper'
 import profile1 from '../../assets/svg/profile1.svg'
 import profile2 from '../../assets/svg/profile2.svg'
 import SmallText from './../common/SmallText'
@@ -37,7 +37,7 @@ const AddComment = () => {
                                     text={item.name}
                                     className='font-semibold !text-2xl leading-[150%] text-black '
                                 />
-                                
+
 
                                 <SmallText
                                     text={item.postname}
