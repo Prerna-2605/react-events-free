@@ -30,7 +30,7 @@ const Special = () => {
                         {special.map((items, index) => (
                             <div key={index} className={`relative flex justify-center ${special.length % 2 !== 0 && index === special.length - 1 ? 'lg:col-span-2 lg:mx-auto' : ''}`}>
                                 <div className='size-[79px] max-w-[79px] w-full border-[2px] border-[#2C49FE] bg-white z-1 rounded-full flex items-center justify-center absolute left-1/2 -translate-x-1/2 -translate-y-1/2 '>
-                                    <img src={items.icon} alt="icon" />
+                                    <img src={items.icon} alt="icon" draggable='false' />
                                 </div>
 
                                 <div className='px-5 pt-[45px] pb-[17px] border border-[#2C49FE] rounded-[5px] max-w-[260px] group hover:bg-[#2C49FE] transition-colors duration-200 '>

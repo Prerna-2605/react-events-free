@@ -15,7 +15,7 @@ const UsernameHero = () => {
 
             <div className='flex flex-wrap justify-between max-[1240px]:gap-5 '>
                 <div className='w-[33%] px-3 max-[1240px]:w-full '>
-                    <img src={img} alt="image" className='max-[1240px]:w-[35%] max-md:w-[70%] max-sm:w-[60%] max-[425px]:!w-full mx-auto ' />
+                    <img src={img} alt="image" draggable='false' className='max-[1240px]:w-[35%] max-md:w-[70%] max-sm:w-[60%] max-[425px]:!w-full mx-auto ' />
                 </div>
 
                 <div className='w-[65%] px-3 max-[1240px]:w-full '>
@@ -51,7 +51,7 @@ const UsernameHero = () => {
                         {Username_Hero.map((item, index) => (
                             <div key={index}>
                                 <div className='flex gap-2 items-center '>
-                                    <img src={item.icon} alt="image" />
+                                    <img src={item.icon} alt="image" draggable='false' />
 
                                     <Description
                                         text={item.data}

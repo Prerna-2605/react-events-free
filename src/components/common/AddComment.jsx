@@ -30,7 +30,7 @@ const AddComment = () => {
                 <div key={index} className='flex flex-wrap items-center max-lg:flex-col-reverse max-lg:gap-5 '>
                     <div className='w-[49%] max-lg:w-full px-3'>
                         <div className='flex gap-[23px] items-center mb-[45px] max-lg:hidden '>
-                            <img src={profile1} alt="profile" />
+                            <img src={profile1} alt="profile" draggable='false' />
 
                             <div>
                                 <Description
@@ -52,7 +52,7 @@ const AddComment = () => {
                         />
 
                         <div className='flex gap-2 mb-5 items-center max-lg:hidden'>
-                            <img src={date} alt="image" />
+                            <img src={date} alt="image" draggable='false' />
 
                             <Description
                                 text={new_date}
@@ -95,7 +95,7 @@ const AddComment = () => {
                     </div>
                     <div className='w-[51%] max-lg:w-full px-3'>
                         <div className='flex gap-[23px] items-center mb-4 lg:hidden '>
-                            <img src={profile1} alt="profile" className='max-sm:size-12  ' />
+                            <img src={profile1} alt="profile" draggable='false' className='max-sm:size-12  ' />
 
                             <div>
                                 <Description
@@ -111,7 +111,7 @@ const AddComment = () => {
                         </div>
 
                         <div className='flex gap-2 mb-5 items-center lg:hidden'>
-                            <img src={date} alt="image" />
+                            <img src={date} alt="image" draggable='false' />
 
                             <Description
                                 text={new_date}
@@ -126,19 +126,19 @@ const AddComment = () => {
 
                         <div className='grid grid-cols-2 gap-x-7 max-sm:gap-x-5 max-[425px]:!gap-x-4 max-lg:w-[70%] max-md:w-full mx-auto '>
                             <div className='flex items-end '>
-                                <img src={img1} alt="image" className='w-full ' />
+                                <img src={img1} alt="image" draggable='false' className='w-full ' />
                             </div>
 
                             <div>
-                                <img src={img2} alt="image" className='w-full ' />
+                                <img src={img2} alt="image" draggable='false' className='w-full ' />
                             </div>
 
                             <div className='flex items-end'>
-                                <img src={img3} alt="image" className='w-full ' />
+                                <img src={img3} alt="image" draggable='false' className='w-full ' />
                             </div>
 
                             <div className='relative'>
-                                <img src={img4} alt="image" className='w-full ' />
+                                <img src={img4} alt="image" draggable='false' className='w-full ' />
 
                                 <More className='absolute bottom-[10px] right-[10px] bg-white ' />
                             </div>
@@ -176,7 +176,7 @@ const AddComment = () => {
 
                     {comments.map((item, index) => (
                         <div key={index} className='flex gap-5 mt-[24px] '>
-                            <img src={item.profile} alt="profile" className='size-[56px] max-md:!size-[46px] max-sm:!size-[42px] ' />
+                            <img src={item.profile} alt="profile" draggable='false' className='size-[56px] max-md:!size-[46px] max-sm:!size-[42px] ' />
                             <div className='w-full '>
                                 <div className='bg-[#F1F2F5] py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] mb-2 '>
                                     <Description

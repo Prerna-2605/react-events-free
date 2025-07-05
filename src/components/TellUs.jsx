@@ -13,7 +13,7 @@ const TellUs = () => {
 
     return (
         <div className='max-w-[1320px] mx-auto mb-[118px] px-3 '>
-            <img src={line} alt="image" className='block mx-auto ' />
+            <img src={line} alt="image" draggable='false' className='block mx-auto ' />
 
             <Heading
                 className='font-semibold text-center mb-4 leading-[1.5] '
@@ -49,7 +49,7 @@ const TellUs = () => {
             <div>
                 {comments.map((item, index) => (
                     <div key={index} className='flex gap-5 mt-[24px] items-start '>
-                        <img src={item.profile} alt="profile" className='size-[56px] max-md:size-[46px] max-sm:size-[42px] ' />
+                        <img src={item.profile} alt="profile" draggable='false' className='size-[56px] max-md:size-[46px] max-sm:size-[42px] ' />
 
                         <div className='w-full '>
                             <div className='bg-[#F1F2F5] py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] mb-2 '>

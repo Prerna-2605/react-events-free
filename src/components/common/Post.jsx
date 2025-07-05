@@ -5,7 +5,7 @@ const Post = ({ profile, placeholder = '', className = '', profileClass = '', bu
     return (
         <div className='relative max-[515px]:flex max-[515px]:flex-col max-[515px]:items-end max-[515px]:gap-2 '>
             <input type="text" placeholder={`${placeholder}`} value={value} onChange={onChange} className={`h-[70px] max-md:h-[60px] max-sm:h-14 border border-[#9CA0BE] w-full py-5 rounded-full placeholder:font-poppins placeholder:font-normal placeholder:text-[20px] max-md:placeholder:text-[17px] max-sm:placeholder:text-sm ${className} `} />
-            <img src={profile} alt="profile" className={`absolute ${profileClass} `} />
+            <img src={profile} alt="profile" draggable='false' className={`absolute ${profileClass} `} />
             <Button
                 text={'Post Comment'}
                 onClick={onPost}

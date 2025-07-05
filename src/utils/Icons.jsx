@@ -35,7 +35,7 @@ export const BLUE_LOCATION = () => (
 );
 
 export const BLUE_DATE = () => (
-    <img src={date} alt="image" />
+    <img src={date} alt="image" draggable='false' />
 );
 
 export const BLUE_PEOPLE = () => (

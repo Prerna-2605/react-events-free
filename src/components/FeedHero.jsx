@@ -15,7 +15,7 @@ const FeedHero = () => {
 
             <div className='flex flex-wrap justify-between items-center max-[1129px]:flex-col '>
                 <div className='w-[30%] max-[1129px]:w-full '>
-                    <img src={jhoneDoe} alt="image" className='min-[1129px]:max-w-[401px] w-full max-[1129px]:w-[40%] max-[1129px]:mb-4 mx-auto max-sm:w-[65%] max-[375px]:!w-full ' />
+                    <img src={jhoneDoe} alt="image" draggable='false' className='min-[1129px]:max-w-[401px] w-full max-[1129px]:w-[40%] max-[1129px]:mb-4 mx-auto max-sm:w-[65%] max-[375px]:!w-full ' />
                 </div>
 
                 <div className='w-[68%] px-3 max-[1129px]:w-full '>
@@ -41,7 +41,7 @@ const FeedHero = () => {
                     <div className='gap-[20px] flex items-end max-[375px]:flex-col '>
                         {following.map((item, index) => (
                             <div key={index} className='rounded-[20px] flex gap-3 p-[13px] items-center shadow-3 max-w-[322px] max-md:flex-col '>
-                                <img src={item.image} alt="image" className='w-full max-md:w-1/3 max-[515px]:!w-1/2 max-[375px]:!w-1/3 ' />
+                                <img src={item.image} alt="image" draggable='false' className='w-full max-md:w-1/3 max-[515px]:!w-1/2 max-[375px]:!w-1/3 ' />
                                 <div>
                                     <p className='font-poppins font-bold text-base max-md:text-center '>
                                         Augue etiam

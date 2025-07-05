@@ -13,7 +13,7 @@ const Homehero = () => {
                 <h1 className='font-poppins font-bold text-[64px] max-lg:text-[58px] max-md:text-[50px] max-sm:text-[46px] text-white max-w-[1044px] leading-[150%] mb-[18px] '>
                     Sed tortor in <span className='relative inline-block '>
                         quisque morbi
-                        <img src={blueline} alt="img" className='absolute -bottom-2 right-0 ' />
+                        <img src={blueline} alt="image" draggable='false' className='absolute -bottom-2 right-0 ' />
                     </span> scelerisque etiam eu.
 
                 </h1>
