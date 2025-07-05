@@ -13,6 +13,11 @@ import img4 from '../../assets/png/newpost4.png'
 import Post from './../common/Post'
 
 const AddComment = () => {
+    const new_date = new Date().toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: '2-digit',
+        year: 'numeric',
+    });
     const [showComments, setShowComments] = useState(false);
     const [liked, setLiked] = useState(false);
     const [likeCount, setLikeCount] = useState(10); // starting likes
@@ -20,11 +25,11 @@ const AddComment = () => {
     const [inputText, setInputText] = useState('');
 
     return (
-        <div className='p-[34px] rounded-[30px] mb-[45px] border border-[#CCCCCC] hover:shadow-3 hover:border-transparent transition-all duration-200 '>
+        <div className='p-[34px] max-sm:p-4 rounded-[30px] mb-[45px] border border-[#CCCCCC] hover:shadow-3 hover:border-transparent transition-all duration-200 '>
             {Username.map((item, index) => (
-                <div key={index} className='flex flex-wrap '>
-                    <div className='w-[49%] px-3'>
-                        <div className='flex gap-[23px] items-center mb-[45px] '>
+                <div key={index} className='flex flex-wrap items-center max-lg:flex-col-reverse max-lg:gap-5 '>
+                    <div className='w-[49%] max-lg:w-full px-3'>
+                        <div className='flex gap-[23px] items-center mb-[45px] max-lg:hidden '>
                             <img src={profile1} alt="profile" />
 
                             <div>
@@ -32,6 +37,7 @@ const AddComment = () => {
                                     text={item.name}
                                     className='font-semibold !text-2xl leading-[150%] text-black '
                                 />
+                                
 
                                 <SmallText
                                     text={item.postname}
@@ -42,26 +48,26 @@ const AddComment = () => {
 
                         <SmallText
                             text={item.title}
-                            className='font-semibold !text-2xl text-black leading-[150%] mb-2 '
+                            className='font-semibold !text-2xl text-black leading-[150%] mb-2 max-lg:hidden '
                         />
 
-                        <div className='flex gap-2 mb-5'>
+                        <div className='flex gap-2 mb-5 items-center max-lg:hidden'>
                             <img src={date} alt="image" />
 
                             <SmallText
-                                text={'10/02/2022'}
+                                text={new_date}
                                 className='text-[#666666] '
                             />
                         </div>
 
                         <SmallText
                             text={item.description1}
-                            className='text-[#666666] max-w-[553px] mb-[13px] '
+                            className='text-[#666666] lg:max-w-[553px] mb-[13px] '
                         />
 
                         <SmallText
                             text={item.description2}
-                            className='text-[#666666] max-w-[553px] mb-[26px] '
+                            className='text-[#666666] lg:max-w-[553px] mb-[26px] '
                         />
 
                         <div className='flex gap-10 '>
@@ -87,22 +93,52 @@ const AddComment = () => {
 
                         </div>
                     </div>
-                    <div className='w-[51%] px-3'>
-                        <div className='grid grid-cols-2 gap-x-[30px] gap-y-[10px]'>
+                    <div className='w-[51%] max-lg:w-full px-3'>
+                        <div className='flex gap-[23px] items-center mb-4 lg:hidden '>
+                            <img src={profile1} alt="profile" />
+
                             <div>
-                                <img src={img1} alt="image" />
+                                <SmallText
+                                    text={item.name}
+                                    className='font-semibold !text-2xl max-lg:!text-xl max-md:!text-[18px] leading-[150%] text-black '
+                                />
+
+                                <SmallText
+                                    text={item.postname}
+                                    className='text-[#666666] max-md:!text-[13px] '
+                                />
+                            </div>
+                        </div>
+
+                        <div className='flex gap-2 mb-5 items-center lg:hidden'>
+                            <img src={date} alt="image" />
+
+                            <SmallText
+                                text={new_date}
+                                className='text-[#666666] max-md:!text-[13px] '
+                            />
+                        </div>
+
+                        <SmallText
+                            text={item.title}
+                            className='font-semibold !text-2xl max-lg:!text-xl max-md:!text-[18px] text-black leading-[150%] mb-6 lg:hidden'
+                        />
+
+                        <div className='grid grid-cols-2 gap-x-7 max-sm:gap-x-5 max-[425px]:!gap-x-4 max-lg:w-[70%] max-md:w-full mx-auto '>
+                            <div className='flex items-end '>
+                                <img src={img1} alt="image" className='w-full ' />
                             </div>
 
-                            <div className='flex items-start'>
-                                <img src={img2} alt="image" />
+                            <div>
+                                <img src={img2} alt="image" className='w-full ' />
                             </div>
 
                             <div className='flex items-end'>
-                                <img src={img3} alt="image" />
+                                <img src={img3} alt="image" className='w-full ' />
                             </div>
 
                             <div className='relative'>
-                                <img src={img4} alt="image" />
+                                <img src={img4} alt="image" className='w-full ' />
 
                                 <More className='absolute bottom-[10px] right-[10px] bg-white ' />
                             </div>
@@ -118,9 +154,9 @@ const AddComment = () => {
                     <Post
                         profile={profile2}
                         placeholder='Write your comment here... '
-                        className='pl-19 '
-                        profileClass='top-[7.5px] left-[7.5px] '
-                        buttonClass='top-[7px] right-[7px] '
+                        className='pl-19 pr-[185px] max-md:pr-[168px] max-md:pl-[58px] max-[515px]:!pr-4 '
+                        profileClass='top-[6.5px] left-[7.5px] size-[56px] max-md:size-[46px] max-sm:size-[44px] max-sm:top-[5.5px] '
+                        buttonClass='top-[7px] right-[7px] max-md:top-[5.5px] max-md:right-[5px] '
                         value={inputText}
                         onChange={(e) => setInputText(e.target.value)}
                         onPost={() => {
@@ -129,7 +165,7 @@ const AddComment = () => {
                                     name: 'You',
                                     profile: profile2,
                                     comment: inputText,
-                                    delete: 'Delete'
+                                    delete: 'Remove Comment'
                                 };
                                 setComments(prev => [newComment, ...prev]);
                                 setInputText('');
@@ -140,7 +176,7 @@ const AddComment = () => {
 
                     {comments.map((item, index) => (
                         <div key={index} className='flex gap-5 mt-[24px] '>
-                            <img src={item.profile} alt="profile" className='w-[56px] h-[56px]' />
+                            <img src={item.profile} alt="profile" className='size-[56px] max-md:size-[46px] max-sm:size-[42px] ' />
                             <div className='w-full '>
                                 <div className='bg-[#F1F2F5] py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] mb-2 '>
                                     <SmallText
