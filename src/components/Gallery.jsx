@@ -13,9 +13,9 @@ const Gallery = () => {
                 text={'Gallery'}
             />
 
-            <div className="grid grid-cols-3 gap-6 ">
+            <div className="grid grid-cols-3 gap-6 max-lg:gap-4 max-md:gap-3 max-sm:gap-2 ">
                 {Grid.map((image, index) => (
-                    <div key={index} className={`overflow-hidden rounded-[30px] ${image.colSpan} ${image.rowSpan} `}>
+                    <div key={index} className={`overflow-hidden max-md:rounded-[15px] md:rounded-[30px] ${image.colSpan} ${image.rowSpan} `}>
                         <img src={image.img} alt="image" className='w-full hover:scale-[1.05] transition-all duration-200 ' />
                     </div>
                 ))}
