@@ -2,7 +2,7 @@ import React from 'react'
 import Comma from '../components/Comma'
 import Gallery from '../components/Gallery'
 import TellUs from '../components/TellUs'
-import UsernameHero from '../components/Usernamehero'
+import UsernameHero from '../components/UsernameHero'
 
 
 const Username = () => {
