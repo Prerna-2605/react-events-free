@@ -8,14 +8,14 @@ const Footer = () => {
     return (
         <footer className='bg-black '>
             <div className="max-w-[1320px] mx-auto px-3 ">
-                <div className='flex flex-wrap pt-[81px] pb-[95px] justify-between items-center '>
-                    <div className="w-1/3 px-3">
+                <div className='flex flex-wrap pt-[81px] pb-[95px] justify-between items-center max-md:gap-6 '>
+                    <div className="w-1/3 px-3 max-md:w-full ">
                         <Link to={'/'}>
                             <img src={logo} alt="logo" draggable="false" />
                         </Link>
 
                         <SmallText
-                            className='text-white text-[14px] mt-9 mb-6 max-w-[346px] '
+                            className='text-white text-[14px] mt-9 mb-6 md:max-w-[346px] '
                             text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c '} />
 
                         <div className='flex gap-[15.41px] '>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className='w-[47%] flex justify-between '>
+                    <div className='w-[47%] max-md:w-full flex justify-between max-[1175px]:grid max-[1175px]:grid-cols-2 '>
                         {footer.map((items, index) => (
                             <ul key={index}>
                                 <li className='font-poppins font-bold text-[14px] text-white mb-[11px] '>
@@ -42,29 +42,31 @@ const Footer = () => {
                                 ))}
                             </ul>
                         ))}
-                        {gallery.map((items, index) => (
-                            <ul key={index}>
-                                <li className='font-poppins font-bold text-[14px] text-white mb-[10px] '>
-                                    {items.title}
-                                </li>
-                                <div className='grid grid-cols-3 gap-y-[13px] gap-x-[18px] '>
-                                    {items.image.map((image, i) => (
-                                        <div key={i} className='overflow-hidden relative'>
-                                            <img src={image} alt="img" draggable="false" className='w-full hover:scale-[1.25] transition-all duration-200 ' />
-                                            {i === items.image.length - 1 && (
-                                                <div className="absolute inset-0 flex items-center justify-center">
-                                                    <p className='font-poppins font-bold text-[12px] text-white '>
-                                                        Show
-                                                        <br />
-                                                        More
-                                                    </p>
-                                                </div>
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
-                            </ul>
-                        ))}
+                        <div className='col-span-2 sm:max-w-[80%] '>
+                            {gallery.map((items, index) => (
+                                <ul key={index}>
+                                    <li className='font-poppins font-bold text-[14px] text-white mb-[10px] '>
+                                        {items.title}
+                                    </li>
+                                    <div className='grid grid-cols-3 gap-y-[13px] gap-x-[18px] '>
+                                        {items.image.map((image, i) => (
+                                            <div key={i} className='overflow-hidden relative'>
+                                                <img src={image} alt="img" draggable="false" className='w-full hover:scale-[1.25] transition-all duration-200 ' />
+                                                {i === items.image.length - 1 && (
+                                                    <div className="absolute inset-0 flex items-center justify-center">
+                                                        <p className='font-poppins font-bold text-[12px] text-white '>
+                                                            Show
+                                                            <br />
+                                                            More
+                                                        </p>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </ul>
+                            ))}
+                        </div>
                     </div>
                 </div>
 

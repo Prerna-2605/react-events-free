@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav className={`fixed top-0 w-full z-20 py-4 transition-all duration-300 ${isFeedPage || isUserPage ? 'bg-white shadow-2 ' : ''} ${scrolled ? 'bg-white shadow-lg ' : ''}  `}>
             <div className={`max-w-[1320px] mx-auto px-3 flex justify-between items-center ${isHomePage || isEventsPage ? 'bg-transparent' : ''} `}>
                 <Link to={'/'} className='flex items-center'>
-                    <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo" className='max-md:w-[90%] max-sm:w-[70%] ' />
                     <p className='font-poppins font-bold text-4xl text-[#2C49FE] max-[952px]:hidden '>
                         Events<span className='text-[#01C8FF] '>Free</span>
                     </p>
@@ -67,7 +67,7 @@ const Navbar = () => {
                         ))}
                     </div>
                     <div className='flex items-center gap-4 '>
-                        <Button className='py-[11px] px-7 ' text={'Log Out'} />
+                        <Button className='py-[11px] px-7 max-sm:py-2 max-sm:px-5 ' text={'Log Out'} />
                         <div className='z-19 md:hidden '>
                             <Hamburger
                                 toggled={state === 'show'}

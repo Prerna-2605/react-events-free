@@ -25,7 +25,7 @@ const AddComment = () => {
     const [inputText, setInputText] = useState('');
 
     return (
-        <div className='p-[34px] max-sm:p-4 rounded-[30px] mb-[45px] border border-[#CCCCCC] hover:shadow-3 hover:border-transparent transition-all duration-200 '>
+        <div className='p-[34px] max-sm:p-4 max-sm:px-2 rounded-[30px] mb-[45px] border border-[#CCCCCC] hover:shadow-3 hover:border-transparent transition-all duration-200 '>
             {Username.map((item, index) => (
                 <div key={index} className='flex flex-wrap items-center max-lg:flex-col-reverse max-lg:gap-5 '>
                     <div className='w-[49%] max-lg:w-full px-3'>
@@ -95,7 +95,7 @@ const AddComment = () => {
                     </div>
                     <div className='w-[51%] max-lg:w-full px-3'>
                         <div className='flex gap-[23px] items-center mb-4 lg:hidden '>
-                            <img src={profile1} alt="profile" />
+                            <img src={profile1} alt="profile" className='max-sm:size-12  ' />
 
                             <div>
                                 <SmallText
@@ -176,7 +176,7 @@ const AddComment = () => {
 
                     {comments.map((item, index) => (
                         <div key={index} className='flex gap-5 mt-[24px] '>
-                            <img src={item.profile} alt="profile" className='size-[56px] max-md:size-[46px] max-sm:size-[42px] ' />
+                            <img src={item.profile} alt="profile" className='size-[56px] max-md:!size-[46px] max-sm:!size-[42px] ' />
                             <div className='w-full '>
                                 <div className='bg-[#F1F2F5] py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] mb-2 '>
                                     <SmallText

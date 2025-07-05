@@ -9,14 +9,18 @@ import Breadcrumb from './common/Breadcrumb'
 const UsernameHero = () => {
     return (
         <div className='max-w-[1320px] mx-auto pt-[165px] mb-[134px] px-3 '>
-            <div className='flex flex-wrap justify-between '>
+            <Breadcrumb
+                className='mb-3 min-[1240px]:hidden '
+            />
+
+            <div className='flex flex-wrap justify-between max-[1240px]:gap-5 '>
                 <div className='w-[33%] px-3 max-[1240px]:w-full '>
-                    <img src={img} alt="image" className='max-[1240px]:w-[35%] max-md:w-[70%] max-sm:w-[50%] max-[425px]:!w-full mx-auto ' />
+                    <img src={img} alt="image" className='max-[1240px]:w-[35%] max-md:w-[70%] max-sm:w-[60%] max-[425px]:!w-full mx-auto ' />
                 </div>
 
                 <div className='w-[65%] px-3 max-[1240px]:w-full '>
                     <Breadcrumb
-                        className='mb-3 '
+                        className='mb-3 max-[1240px]:hidden '
                     />
 
                     <div className='flex justify-between mb-[29px] items-center max-[521px]:flex-col max-[521px]:gap-5 '>

@@ -10,7 +10,7 @@ const FeedHero = () => {
     return (
         <div className='max-w-[1320px] mx-auto px-3 mt-[165px]'>
             <Breadcrumb
-                className='mb-3 '
+                className='mb-3 min-[1139px]:hidden'
             />
 
             <div className='flex flex-wrap justify-between items-center max-[1129px]:flex-col '>
