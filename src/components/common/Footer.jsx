@@ -35,44 +35,44 @@ const Footer = () => {
                                 </li>
                                 {items.list.map((link, i) => (
                                     <li key={i} className='mb-3'>
-                                        <Link to={`/${link}`} className='font-poppins font-normal text-[12px] text-white '>
-                                            {link}
-                                        </Link>
+                                        <Link to={`/`} className='font-poppins font-normal text-[12px] text-white relative after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:transition-all after:duration-300 hover:after:w-0 '>
+                                        {link}
+                                    </Link>
                                     </li>
-                                ))}
+                        ))}
+                    </ul>
+                        ))}
+                    <div className='col-span-2 sm:max-w-[80%] '>
+                        {gallery.map((items, index) => (
+                            <ul key={index}>
+                                <li className='font-poppins font-bold text-[14px] text-white mb-[10px] '>
+                                    {items.title}
+                                </li>
+                                <div className='grid grid-cols-3 gap-y-[13px] gap-x-[18px] '>
+                                    {items.image.map((image, i) => (
+                                        <div key={i} className='overflow-hidden relative'>
+                                            <img src={image} alt="img" draggable="false" className='w-full hover:scale-[1.25] transition-all duration-200 ' />
+                                            {i === items.image.length - 1 && (
+                                                <div className="absolute inset-0 flex items-center justify-center">
+                                                    <p className='font-poppins font-bold text-[12px] text-white '>
+                                                        Show
+                                                        <br />
+                                                        More
+                                                    </p>
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
                             </ul>
                         ))}
-                        <div className='col-span-2 sm:max-w-[80%] '>
-                            {gallery.map((items, index) => (
-                                <ul key={index}>
-                                    <li className='font-poppins font-bold text-[14px] text-white mb-[10px] '>
-                                        {items.title}
-                                    </li>
-                                    <div className='grid grid-cols-3 gap-y-[13px] gap-x-[18px] '>
-                                        {items.image.map((image, i) => (
-                                            <div key={i} className='overflow-hidden relative'>
-                                                <img src={image} alt="img" draggable="false" className='w-full hover:scale-[1.25] transition-all duration-200 ' />
-                                                {i === items.image.length - 1 && (
-                                                    <div className="absolute inset-0 flex items-center justify-center">
-                                                        <p className='font-poppins font-bold text-[12px] text-white '>
-                                                            Show
-                                                            <br />
-                                                            More
-                                                        </p>
-                                                    </div>
-                                                )}
-                                            </div>
-                                        ))}
-                                    </div>
-                                </ul>
-                            ))}
-                        </div>
                     </div>
                 </div>
-
-                <Description className='text-[14px] text-white text-center pb-[25px] ' text={'© Credits of companyName belong to companyName.'} />
             </div>
-        </footer>
+
+            <Description className='text-[14px] text-white text-center pb-[25px] ' text={'© Credits of companyName belong to companyName.'} />
+        </div>
+        </footer >
     )
 }
 

@@ -27,7 +27,7 @@ const Homehero = () => {
                         text={'Get Started'}
                         className='py-[11px] px-7 text-[20px] max-sm:text-[18px] max-sm:py-[9px] max-sm:px-6 leading-[150%] ' />
 
-                    <Link className='font-poppins font-normal text-[20px] max-sm:text-[18px] text-white hover:tracking-wider transition-all duration-300 '>
+                    <Link className='font-poppins font-normal text-[20px] max-sm:text-[18px] text-white transition-all duration-300 relative after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:transition-all after:duration-300 hover:after:w-0 '>
                         Learn more
                     </Link>
                 </div>

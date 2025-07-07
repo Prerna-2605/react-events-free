@@ -76,18 +76,18 @@ const AddComment = () => {
                                     setLiked((prev) => !prev);
                                     setLikeCount((prev) => liked ? prev - 1 : prev + 1);
                                 }}
-                                className="flex gap-2 items-center"
+                                className="flex gap-2 items-center cursor-pointer"
                             >
-                                <LIKE className={`cursor-pointer ${liked ? 'text-[#2C49FE]' : ''}`} liked={liked} />
+                                <LIKE className={`${liked ? '' : ''}`} liked={liked} />
                                 <Description text={likeCount} />
                             </button>
 
 
                             <button
                                 onClick={() => setShowComments((prev) => !prev)}
-                                className="flex gap-2 items-center"
+                                className="flex gap-2 items-center cursor-pointer"
                             >
-                                <COMMENT className="cursor-pointer" />
+                                <COMMENT/>
                                 <Description text={comments.length} className="text-[#666666]" />
                             </button>
 
